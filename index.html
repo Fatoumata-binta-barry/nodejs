@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devoir </title>
+      <!-- <link rel="stylesheet" type="text/css" href="styles.css">-->
+       <link rel="stylesheet" type="text/js" href="index.js">
+
+<style type="text/css">
+    form{
+    max-width: 600px;
+    margin: auto;
+    background-color: rgb(80, 22, 214);
+    border: 15px;
+}
+form,footer{
+    color: rgb(255, 255, 255);
+}
+.col{
+    color:whitesmoke;
+}
+label{
+    display: block;
+    margin-top: 10px;
+}
+input[type="text"],select{width: 100%;
+padding: 5px;}
+
+input[type="file"] {
+    margin-top: 5px;
+}
+#btn-envoyer{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #5e4caf;
+    color:white ;
+    border:solid 2px rgb(19, 17, 17) ;
+    cursor:pointer;
+}
+</style>
+
+
+
+
+
+</head>
+<body>
+    <form id="Mon_formulaire" enctype="multipart/from-data" method="POST">
+        <fieldset>
+            <legend>FORMULAIRE DE CONTACT:</legend>
+        
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom"   placeholder="veillez saisir votre nom svp"  name="nom" required>
+
+        <label for="nom">Prenom:</label>
+        <input type="text" id="Prenom" placeholder="veillez saisir votre Prenom svp" name="Prenom" required>
+
+        <label>Genre:</label>
+        <input type="radio" id="genreH" name="genre" value="homme">Homme</label>
+        <label>
+        <input type="radio" id="genreF" name="genre" value="femme">femme
+        </label>
+        <label for="pays">Pays:</label>
+        <select id="pays" name="pays">//OPTION POUR TOUT LES PAYS DU MONDE 
+            <optgroup label="AMERIQUE">AMERIQUE
+                <option value="usa">USA</option>
+                <option value="ca">CANADA</option>
+                <option value="br">BRESIL</option>
+            </optgroup>
+
+             <optgroup label="EUROPE">EUROPE
+                <option value="FR" selected>FRANCE</option>
+                <option value="BE">BELGIQUE</option>
+                <option value="IT">ITALYE</option>
+            </optgroup>
+
+            <optgroup label="AFRIQUE">AFRIQUE
+                <option value="GN" >GUINEE</option>
+                <option value="MI">MALIE</option>
+                <option value="AL">ALGERIE</option>
+            </optgroup>
+            <optgroup label="ASIE">ASIE
+                <option value="ch">CHINE</option>
+                <option value="JAPON">JAPON</option>
+                <option value="cs">CORRE-SUD</option>
+                <option value="AS">ARABIE SAOUDIE</option>
+            </optgroup>
+            <optgroup label="OCEANIE">OCEANIE
+                <option value="NG">NOUVELLE GUINEE</option>
+                <option value="AUS">AUSTRALIE</option>
+                <option value="SHE">SHEYCHELLE</option>
+            </optgroup>
+
+        </select>
+
+        <label for="auteurs">Auteurs:</label>
+
+        <select id="auteurs" name="auteurs">OPIONS SUR LAUTEURS
+                <option value="nom">Ahmadou kourouma</option>
+                <option value="nom">Mongo beti</option>
+                <option value="nom">Léopold sédar senghor</option>
+                <option value="nom">Cheik hamidou kane</option>
+                <option value="nom">Marie christine</option>
+                <option value="nom">Papé Mongo</option>
+                <option value="nom">Mariama Ndoye</option>
+                <option value="nom">Aimé Césaire</option>
+                <option value="nom">Thierno Monénembo</option>
+                <option value="nom">Réne Maran</option>
+        </select>
+
+        <label for="cv">CV(Format PDF):</label>
+        <input type="file" id="cv" name="cv" accept=".pdf" required>
+        
+        <label for="images">Images:</label>
+        <input type="file" id="images" name="images" accept="images/*"multiple>
+
+        <input type="submit" value="Envoyer" id="btn-envoyer">
+
+        </fieldset>
+        <footer class="col">Fatbin_Développeuse_en_Full_Stack</footer>
+    </form>
+</body>
+</html>

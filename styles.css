@@ -1,0 +1,30 @@
+form{
+    max-width: 600px;
+    margin: auto;
+    background-color: rgb(105, 17, 219);
+    border: 15px;
+}
+form,footer{
+    color: rgb(255, 255, 255);
+}
+.col{
+    color:whitesmoke;
+}
+label{
+    display: block;
+    margin-top: 10px;
+}
+input[type="text"],select{width: 100%;
+padding: 5px;}
+
+input[type="file"] {
+    margin-top: 5px;
+}
+#btn-envoyer{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #9613ec;
+    color:white ;
+    border:solid 2px rgb(15, 12, 12) ;
+    cursor:pointer;
+}
